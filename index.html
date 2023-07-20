@@ -14,17 +14,44 @@
   </head>
   <body>
     <div class="container-fluid fondo-principal">
+      <nav class="navbar navbar-expand-lg bg-custom-color fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Peliculas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Quienes Somos</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-primary" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
       <div class="row">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./IMG/Banners/Indiana.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./IMG/Banners/Jon wik.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./IMG/Banners/Shazam.jpeg" class="d-block w-100" alt="...">
+        <div class="d-flex justify-content-center">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./IMG/Banners/Indiana.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./IMG/Banners/Jon wik.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./IMG/Banners/Shazam.jpeg" class="d-block w-100" alt="...">
+              </div>
             </div>
           </div>
         </div>
@@ -46,120 +73,369 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-2 d-none d-lg-block">
-          <table class="table table-primary">
-            <thead>
-              <tr>
-                <th scope="col">Generos</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Accion</td>
-              </tr>
-              <tr>
-                <td>Drama</td>
-              </tr>
-              <tr>
-                <td>Terror</td>
-              </tr>
-              <tr>
-                <td>Fantasia y Ciencia ficcion</td>
-              </tr>
-              <tr>
-                <td>Animacion</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="col-lg-2 d-none d-lg-block position fixed" style="text-align: center;">
+          <h2><b>Generos</b></h2>
+          <div class="btn-group-vertical container fluid" role="group" aria-label="Vertical button group">
+            <button type="button" class="btn btn-primary">Accion</button>
+            <button type="button" class="btn btn-primary">Drama</button>
+            <button type="button" class="btn btn-primary">Terror</button>
+            <button type="button" class="btn btn-primary">Fantasia</button>
+            <button type="button" class="btn btn-primary">Ciencia Ficcion</button>
+            <button type="button" class="btn btn-primary">Animacion</button>
+          </div>
         </div>
         <div class="col-lg-10">
-          <div class="container">
-            <h3>Seguir viendo</h3>
-            <div class="row d-sm-none">
-              <div id="carouselExample" class="carousel slide">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="card" style="background-color: transparent;">
-                      <img src="./IMG/Portadas/indiana_jones_y_el_dial_del_destino-cartel-11145.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <div class="row">
-                          <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
-                          <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+          <div class="row">
+            <div class="container-fluid">
+              <h3><b>Seguir viendo</b></h3>
+              <div class="row d-sm-none">
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="card" style="background-color: transparent;">
+                        <img src="./IMG/Portadas/indiana_jones_y_el_dial_del_destino-cartel-11145.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row">
+                            <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                            <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card" style="background-color: transparent;">
+                        <img src="./IMG/Portadas/los_mercen4rios-cartel-11162.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row">
+                            <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                            <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card" style="background-color: transparent;">
+                        <img src="./IMG/Portadas/misterio_en_venecia-cartel-11055.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row">
+                            <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                            <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card" style="background-color: transparent;">
+                        <img src="./IMG/Portadas/oppenheimer-cartel-11159.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row">
+                            <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                            <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
-                    <div class="card" style="background-color: transparent;">
-                      <img src="./IMG/Portadas/los_mercen4rios-cartel-11162.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <div class="row">
-                          <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
-                          <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
-                        </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="d-none d-md-block">
+                <div class="row">
+                  <div class="card" style="width: 18rem; background-color: transparent;">
+                    <img src="./IMG/Portadas/indiana_jones_y_el_dial_del_destino-cartel-11145.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="row">
+                        <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                        <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
                       </div>
                     </div>
                   </div>
-                  <div class="carousel-item">
-                    <div class="card" style="background-color: transparent;">
-                      <img src="./IMG/Portadas/misterio_en_venecia-cartel-11055.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <div class="row">
-                          <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
-                          <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
-                        </div>
+                  <div class="card" style="width: 18rem; background-color: transparent;">
+                    <img src="./IMG/Portadas/los_mercen4rios-cartel-11162.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="row">
+                        <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                        <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem; background-color: transparent;">
+                    <img src="./IMG/Portadas/misterio_en_venecia-cartel-11055.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="row">
+                        <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                        <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem; background-color: transparent;">
+                    <img src="./IMG/Portadas/oppenheimer-cartel-11159.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="row">
+                        <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                        <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
                       </div>
                     </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
               </div>
             </div>
-            <div class="d-none d-md-block">
-              <div class="row">
-                <div class="card" style="width: 18rem; background-color: transparent;">
-                  <img src="./IMG/Portadas/indiana_jones_y_el_dial_del_destino-cartel-11145.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                      <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
-                      <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+          </div>
+          <div class="row">
+            <div class="container-fluid">
+              <h3><b>Para ti</b></h3>
+              <div class="row d-sm-none">
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="card" style="background-color: transparent;">
+                        <img src="./IMG/Portadas/indiana_jones_y_el_dial_del_destino-cartel-11145.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row">
+                            <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                            <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card" style="background-color: transparent;">
+                        <img src="./IMG/Portadas/los_mercen4rios-cartel-11162.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row">
+                            <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                            <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card" style="background-color: transparent;">
+                        <img src="./IMG/Portadas/misterio_en_venecia-cartel-11055.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row">
+                            <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                            <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card" style="background-color: transparent;">
+                        <img src="./IMG/Portadas/oppenheimer-cartel-11159.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row">
+                            <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                            <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="d-none d-md-block">
+                <div class="row">
+                  <div class="card" style="width: 18rem; background-color: transparent;">
+                    <img src="./IMG/Portadas/indiana_jones_y_el_dial_del_destino-cartel-11145.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="row">
+                        <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                        <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem; background-color: transparent;">
+                    <img src="./IMG/Portadas/los_mercen4rios-cartel-11162.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="row">
+                        <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                        <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem; background-color: transparent;">
+                    <img src="./IMG/Portadas/misterio_en_venecia-cartel-11055.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="row">
+                        <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                        <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem; background-color: transparent;">
+                    <img src="./IMG/Portadas/oppenheimer-cartel-11159.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="row">
+                        <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                        <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="card" style="width: 18rem; background-color: transparent;">
-                  <img src="./IMG/Portadas/los_mercen4rios-cartel-11162.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                      <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
-                      <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="container-fluid">
+              <h3><b>Estrenos</b></h3>
+              <div class="row d-sm-none">
+                <div id="carouselExample" class="carousel slide">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="card" style="background-color: transparent;">
+                        <img src="./IMG/Portadas/indiana_jones_y_el_dial_del_destino-cartel-11145.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row">
+                            <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                            <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card" style="background-color: transparent;">
+                        <img src="./IMG/Portadas/los_mercen4rios-cartel-11162.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row">
+                            <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                            <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card" style="background-color: transparent;">
+                        <img src="./IMG/Portadas/misterio_en_venecia-cartel-11055.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row">
+                            <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                            <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="card" style="background-color: transparent;">
+                        <img src="./IMG/Portadas/oppenheimer-cartel-11159.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <div class="row">
+                            <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                            <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-                <div class="card" style="width: 18rem; background-color: transparent;">
-                  <img src="./IMG/Portadas/misterio_en_venecia-cartel-11055.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                      <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
-                      <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+              </div>
+              <div class="d-none d-md-block">
+                <div class="row">
+                  <div class="card" style="width: 18rem; background-color: transparent;">
+                    <img src="./IMG/Portadas/indiana_jones_y_el_dial_del_destino-cartel-11145.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="row">
+                        <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                        <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem; background-color: transparent;">
+                    <img src="./IMG/Portadas/los_mercen4rios-cartel-11162.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="row">
+                        <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                        <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem; background-color: transparent;">
+                    <img src="./IMG/Portadas/misterio_en_venecia-cartel-11055.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="row">
+                        <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                        <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem; background-color: transparent;">
+                    <img src="./IMG/Portadas/oppenheimer-cartel-11159.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="row">
+                        <a href="#" class="btn btn-primary col-8"><img src="./IMG/Botones/play.png" alt="Play" class="icono"></a>
+                        <a href="#" class="btn btn-primary col-4"><img src="./IMG/Botones/fav.png" alt="Favorito" class="icono"></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -168,6 +444,11 @@
           </div>
         </div>
       </div>
+      <footer class="bg-custom-color" style="text-align: center;">
+        <h5><b>Curso de desarrollador full Stack 2023.</b></h5>
+        <h5>Primer proyecto.</h5>
+        <h5>UTN-FRT</h5>
+      </footer>
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
